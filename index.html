@@ -48,5 +48,26 @@
     <div class="zoro" id="zoro"></div>
 
     <script src="main.js"></script>
+
+  
+    <div class="music-player" id="musicPlayer">
+        <div class="music-embed" id="musicEmbed">
+            <iframe data-testid="embed-iframe" style="border-radius:16px" src="https://open.spotify.com/embed/track/59hVbgr8rfYkDbHfr8RcGI?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <button class="music-toggle" id="musicToggle" aria-label="Toggle music player" title="Now Playing">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+        </button>
+    </div>
+    <script>
+    (function(){
+        var toggle = document.getElementById("musicToggle");
+        var embed  = document.getElementById("musicEmbed");
+        var open   = false;
+        toggle.addEventListener("click", function(){
+            open = !open;
+            embed.classList.toggle("open", open);
+        });
+    })();
+    </script>
 </body>
 </html>
