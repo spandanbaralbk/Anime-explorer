@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top Anime</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="shanks">
+        <a href="index.html" class="rayleigh">Anime Search</a>
+        <div class="benn">
+            <a href="index.html" class="yasopp">Search</a>
+            <a href="animetop.html" class="yasopp active">Top Anime</a>
+            <a href="animegenre.html" class="yasopp">Genres</a>
+        </div>
+    </nav>
+
+    <div class="whitebeard" style="padding-bottom:40px;">
+        <h1 class="newgate">Top<br>Anime</h1>
+        <p class="thatch">The highest rated anime of all time</p>
+        <div class="rakuyo" style="margin-top:24px;">
+            <button class="haruta active" data-type="bypopularity" onclick="loadTop('bypopularity', this)">Popular</button>
+            <button class="haruta" data-type="airing" onclick="loadTop('airing', this)">Airing Now</button>
+            <button class="haruta" data-type="upcoming" onclick="loadTop('upcoming', this)">Upcoming</button>
+            <button class="haruta" data-type="tv" onclick="loadTop('tv', this)">TV Series</button>
+            <button class="haruta" data-type="movie" onclick="loadTop('movie', this)">Movies</button>
+        </div>
+    </div>
+
+    <div class="namur" id="namur" style="display:none;">
+        <div class="marco"></div>
+        <p class="portgas">Loading top anime...</p>
+    </div>
+
+    <div class="ace" id="ace" style="display:none;">
+        <div class="sabo"></div>
+        <p class="luffy" id="luffy">Failed to load. Try again!</p>
+    </div>
+
+    <div class="topgrid" id="topgrid"></div>
+
+    <script src="animetop.js"></script>
+</body>
+</html>

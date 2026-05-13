@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anime Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="shanks">
+        <a href="index.html" class="rayleigh">Anime Search</a>
+        <div class="benn">
+            <a href="index.html" class="yasopp active">Search</a>
+            <a href="animetop.html" class="yasopp">Top Anime</a>
+            <a href="animegenre.html" class="yasopp">Genres</a>
+        </div>
+    </nav>
+
+    <div class="whitebeard">
+        <h1 class="newgate">Anime<br>Search</h1>
+        <p class="thatch">Find any anime instantly</p>
+
+        <div class="vista">
+            <input type="text" class="izo" id="izo" placeholder="e.g. Naruto, Attack on Titan...">
+            <button class="jozu" id="jozu">Search</button>
+            <div class="atmos" id="atmos"></div>
+        </div>
+
+        <div class="rakuyo">
+            <button class="haruta" onclick="searchAnime('One Piece')">One Piece</button>
+            <button class="haruta" onclick="searchAnime('Bleach')">Bleach</button>
+            <button class="haruta" onclick="searchAnime('Demon Slayer')">Demon Slayer</button>
+            <button class="haruta" onclick="searchAnime('Jujutsu Kaisen')">Jujutsu Kaisen</button>
+        </div>
+    </div>
+
+    <div class="namur" id="namur" style="display:none;">
+        <div class="marco"></div>
+        <p class="portgas">Searching...</p>
+    </div>
+
+    <div class="ace" id="ace" style="display:none;">
+        <div class="sabo"></div>
+        <p class="luffy" id="luffy">Nothing found. Try another name!</p>
+    </div>
+
+    <div class="zoro" id="zoro"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anime Genres</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="shanks">
+        <a href="index.html" class="rayleigh">Anime Search</a>
+        <div class="benn">
+            <a href="index.html" class="yasopp">Search</a>
+            <a href="animetop.html" class="yasopp">Top Anime</a>
+            <a href="animegenre.html" class="yasopp active">Genres</a>
+        </div>
+    </nav>
+
+    <div class="whitebeard" style="padding-bottom:40px;">
+        <h1 class="newgate">Genres</h1>
+        <p class="thatch">Browse anime by genre</p>
+    </div>
+
+    <div class="genregrid">
+        <div class="genrecard" onclick="loadGenre(1,'Action')">
+            <span class="genrename">Action</span>
+        </div>
+        <div class="genrecard" onclick="loadGenre(2,'Adventure')">
+            <span class="genrename">Adventure</span>
+        </div>
+        <div class="genrecard" onclick="loadGenre(4,'Comedy')">
+            <span class="genrename">Comedy</span>
+        </div>
+        <div class="genrecard" onclick="loadGenre(8,'Drama')">
+            <span class="genrename">Drama</span>
+        </div>
+        <div class="genrecard" onclick="loadGenre(10,'Fantasy')">
+            <span class="genrename">Fantasy</span>
+        </div>
+        <div class="genrecard" onclick="loadGenre(14,'Horror')">
+            <span class="genrename">Horror</span>
+        </div>
+        <div class="genrecard" onclick="loadGenre(7,'Mystery')">
+            <span class="genrename">Mystery</span>
+        </div>
+        <div class="genrecard" onclick="loadGenre(22,'Romance')">
+            <span class="genrename">Romance</span>
+        </div>
+        <div class="genrecard" onclick="loadGenre(24,'Sci-Fi')">
+            <span class="genrename">Sci-Fi</span>
+        </div>
+        <div class="genrecard" onclick="loadGenre(36,'Slice of Life')">
+            <span class="genrename">Slice of Life</span>
+        </div>
+        <div class="genrecard" onclick="loadGenre(30,'Sports')">
+            <span class="genrename">Sports</span>
+        </div>
+        <div class="genrecard" onclick="loadGenre(37,'Supernatural')">
+            <span class="genrename">Supernatural</span>
+        </div>
+    </div>
+
+    <div class="namur" id="namur" style="display:none;">
+        <div class="marco"></div>
+        <p class="portgas">Loading...</p>
+    </div>
+
+    <div class="ace" id="ace" style="display:none;">
+        <div class="sabo"></div>
+        <p class="luffy" id="luffy">Failed to load. Try again!</p>
+    </div>
+
+    <div class="genreresulttitle" id="genreresulttitle"></div>
+    <div class="topgrid" id="topgrid"></div>
+
+    <script src="animegenre.js"></script>
+</body>
+</html>
